@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+#define max 10
+ int main()
+  {
+   int a[max][max],n,i,j;
+   printf("enter size less than %d",max);
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+    {
+     for(j=0;j<n;j++)
+      {
+      scanf("%d",&a[i][j]);
+      if(i==j)
+      {
+       sum1=sum1+a[i][j];
+      }
+      if((i+j)==n-1)
+      {
+     sum2=sum2+a[i][j];
+      }
+    }
+ }
+ sum=abs(sum2-sum1);
+ printf("%d",sum);
+ return 0;
+ }
+
+
