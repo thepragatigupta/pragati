@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#define max 10
+int main()
+{
+ int sum=0,n,a[max],i,j,pos1,pos2;
+ printf("enter the limit of an array");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+  scanf("%d",&a[i]);
+for(i=0;i<n;i++)
+{
+ for(j=i+1;j<n-1;j++)
+ {
+   sum=abs(a[i]+a[j]);
+   if(sum<min)
+   {
+    min=sum;
+    pos1=i;
+    pos2=j;
+    }
+  printf("indices are %d %d",a[pos1],a[pos2]);
+}
+return 0;
+}
+
+    
+  
